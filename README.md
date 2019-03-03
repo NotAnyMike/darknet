@@ -24,7 +24,7 @@ TODO: small description
 
 	For example: `./darknet detector test cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -i 0 -thresh 0.25 cones/frame0030.jpg`
 
-	NOTE: The command saves the image with the bounding boxes in the `EUFS` directory
+	NOTE: The command saves the images with predictions in the `EUFS` directory as `predictions.jpg`
 
 * For video:
 
