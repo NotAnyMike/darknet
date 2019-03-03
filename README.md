@@ -25,6 +25,13 @@ TODO: small description
 
 TODO
 
+## Weights
+
+| name | description |
+| --- | --- |
+| `darknet19_448.conv.23` | original from yolo used in retraining |
+| `v1/...2000.weights` | **Stable weights** for cones |
+
 ## Extra information
 
 This repo is part of a bigger repo from TODO
