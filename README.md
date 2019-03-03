@@ -23,6 +23,7 @@ TODO: small description
 	2. run the command: `./darknet detector test cfg/cones-obj.data cfg/cones-obj.cfg <<path to weights file>> -i 0 -thresh 0.25 <<path to image>>`
 
 	For example: `./darknet detector test cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -i 0 -thresh 0.25 cones/frame0030.jpg`
+
 	NOTE: The command saves the image with the bounding boxes in the `EUFS` directory
 
 * For video:
@@ -35,7 +36,7 @@ TODO: small description
 * For several images
 
 
-NOTES: `tresh` flag is the minimum treshold of confidence for the prediction
+NOTE: `tresh` flag is the minimum treshold of confidence for the prediction
 ## How to retrain it
 
 TODO
