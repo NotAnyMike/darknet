@@ -17,14 +17,23 @@ TODO: small description of this repo and some of its output videos and images
 
 TODO: small description
 
-* For single images: TODO
+* For single images: 
+
+	1. cd into EUFS: `cd EUFS`
+	2. run the command: `./darknet detector test cfg/cones-obj.data cfg/cones-obj.cfg <<path to weights file>> -i 0 -thresh 0.25 <<path to image>>`
+	For example: `./darknet detector test cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -i 0 -thresh 0.25 cones/frame0030.jpg`
+	NOTE: The command saves the image with the bounding boxes in the `EUFS` directory
+
 * For video:
 
 	1. cd into EUFS: `cd EUFS`
-	2. run the command: `./darknet detector demo cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -thresh 0.25 videos/out.mp4`
+	2. run the command: `./darknet detector demo cfg/cones-obj.data cfg/cones-obj.cfg <<path to weight file>> -thresh 0.25 <<path to video file>>`
+	For example: `./darknet detector demo cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -thresh 0.25 videos/out.mp4`
 
 * For several images
 
+
+NOTES: `tresh` flag is the minimum treshold of confidence for the prediction
 ## How to retrain it
 
 TODO
