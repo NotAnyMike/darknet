@@ -27,3 +27,7 @@ Thumbs.db
 
 # EUFS #
 weights/
+
+# Darknet Generated #
+bad.list
+res.avi

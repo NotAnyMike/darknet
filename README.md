@@ -18,7 +18,11 @@ TODO: small description of this repo and some of its output videos and images
 TODO: small description
 
 * For single images: TODO
-* For video: TODO
+* For video:
+
+	1. cd into EUFS: `cd EUFS`
+	2. run the command: `./darknet detector demo cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -thresh 0.25 videos/out.mp4`
+
 * For several images
 
 ## How to retrain it
