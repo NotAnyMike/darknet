@@ -201,15 +201,15 @@ void demo(char *cfgfile, char *weightfile, float thresh, float hier_thresh, int 
     if (out_filename && !flag_exit)
     {
         CvSize size;
-        size.width = det_img->width, size.height = det_img->height;
-        // size.width = , size.height = ;
+        // size.width = det_img->width, size.height = det_img->height;
+        size.width = int(cap.get(3), size.height = cap.get(4);
         int src_fps = 25;
         src_fps = get_stream_fps(cap, cpp_video_capture);
 
         //const char* output_name = "test_dnn_out.avi";
         //output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('H', '2', '6', '4'), src_fps, size, 1);
         // output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('D', 'I', 'V', 'X'), src_fps, size, 1);
-        output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('D', 'I', 'V', 'X'), src_fps, (int(cap.get(3)), int(cap.get(4))), 1);
+        output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('D', 'I', 'V', 'X'), src_fps, size, 1);
         //output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('M', 'J', 'P', 'G'), src_fps, size, 1);
         //output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('M', 'P', '4', 'V'), src_fps, size, 1);
         //output_video_writer = cvCreateVideoWriter(out_filename, CV_FOURCC('M', 'P', '4', '2'), src_fps, size, 1);
