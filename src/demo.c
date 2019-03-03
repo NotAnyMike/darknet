@@ -192,7 +192,7 @@ void demo(char *cfgfile, char *weightfile, float thresh, float hier_thresh, int 
 
     int count = 0;
     if(!prefix && !dont_show){
-        cvNamedWindow("Demo", CV_WINDOW_NORMAL);
+        cvNamedWindow("Video Demo", CV_WINDOW_NORMAL);
         cvMoveWindow("Demo", 0, 0);
         cvResizeWindow("Demo", 1352, 1013);
     }
@@ -201,8 +201,8 @@ void demo(char *cfgfile, char *weightfile, float thresh, float hier_thresh, int 
     if (out_filename && !flag_exit)
     {
         CvSize size;
-        // size.width = det_img->width, size.height = det_img->height;
-        size.width = int(cap.get(3), size.height = cap.get(4);
+        size.width = det_img->width, size.height = det_img->height;
+        // size.width = int(cap.get(3), size.height = cap.get(4);
         int src_fps = 25;
         src_fps = get_stream_fps(cap, cpp_video_capture);
 
