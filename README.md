@@ -60,17 +60,14 @@ TODO
 
 ### Installing OpenCV with ffmpeg Support
 
-1. Remove any pre-installed ffmpeg packages:
+1. Remove any pre-installed ffmpeg packages and install dependencies:
 
 ```sudo apt-get -qq remove x264 libx264-dev ffmpeg
 sudo apt-get --purge remove libav-tools
 sudo apt-get --purge autoremove
+sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
 ```
-2. Install dependencies:
-
-```sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
-```
-3. Install ffmpeg:
+2. Install ffmpeg:
 
 ```git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
 cd ffmpeg
@@ -79,7 +76,7 @@ make
 sudo make install
 ```
 
-4. Install OpenCV:
+3. Install OpenCV:
 
 ```git clone https://github.com/opencv/opencv.git opencv
 cd opencv
