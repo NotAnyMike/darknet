@@ -8,7 +8,7 @@ TODO: small description of this repo and some of its output videos and images
 
 1. (Optional) Install OpenCV with ffmpeg support using [these instructions](https://github.com/NotAnyMike/darknet_EUFS#Installing-OpenCV-with-ffmpeg-Support).
 	
-NOTE: This step is required if you'd like to pass videos/camera input into the program for object detection; it is highly recommended
+	NOTE: This step is required if you'd like to pass videos/camera input into the program for object detection; it is highly recommended
 2. Clone this repo
 3. In the `darknet_EUFS` folder, modify `MakeFile` based on [these instructions](https://github.com/AlexeyAB/darknet#how-to-compile-on-linux)
 4. Compile it using `make`
