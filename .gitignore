@@ -31,3 +31,16 @@ weights/
 bad.list
 res.avi
 predictions.jpg
+
+# Makefile Generated / Changed #
+Makefile
+darknet
+image_yolov2.sh
+image_yolov3.sh
+json_mjpeg_streams.sh
+net_cam_v3.sh
+video_v2.sh
+video_yolov3.sh
+
+# batch.py Generated #
+pred_*
