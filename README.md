@@ -32,7 +32,7 @@ TODO: small description of this repo and some of its output videos and images
 
 	For example: `./darknet detector demo cfg/cones-obj.data cfg/cones-obj.cfg weights/v1/yolo-cones_2000.weights -dont_show -thresh 0.05 videos/out.mp4`
 
-* For Several Images
+* For Several Images:
 	
 	1. cd into EUFS: `cd EUFS`
 	2. run the command: `batch.py <path to directory with images> <type of image (default: jpg)>`
@@ -41,7 +41,7 @@ TODO: small description of this repo and some of its output videos and images
 
 	This will create a directory called `pred_cones` with images containing the boudning box and label of the prediction(s)
 
-Flags: 
+**Flags:** 
 * `tresh x`: outputs predictions that have confidence greater than `x*100`%
 * `dont_show`: doesn't open the image/video after making predictions 
 
@@ -66,10 +66,12 @@ TODO
 
 sudo apt-get --purge remove libav-tools
 
-sudo apt-get --purge autoremove```
+sudo apt-get --purge autoremove
+```
 2. Install dependencies:
 
-`sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils`
+```sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
+```
 3. Install ffmpeg:
 
 ```git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
@@ -80,7 +82,8 @@ cd ffmpeg
 
 make
 
-sudo make install```
+sudo make install
+```
 
 4. Install OpenCV:
 
@@ -96,7 +99,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 make -j2
 
-sudo make install```
+sudo make install
+```
 
 
 ### More Information
