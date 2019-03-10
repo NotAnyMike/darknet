@@ -8,9 +8,11 @@ TODO: small description of this repo and some of its output videos and images
 
 1. (Optional) Install OpenCV with ffmpeg support using [these instructions](https://github.com/NotAnyMike/darknet_EUFS#Installing-OpenCV-with-ffmpeg-Support).
 	
-	NOTE: This step is required if you'd like to pass videos/camera input into the program for object detection; it is highly recommended
+	NOTE: This step is required if you'd like to pass videos/camera input into the program for object detection; however, OpenCV tends to have problems with CUDA so if you have CUDA installed, skip this step.
 2. Clone this repo
 3. In the `darknet_EUFS` folder, modify `MakeFile` based on [these instructions](https://github.com/AlexeyAB/darknet#how-to-compile-on-linux)
+
+	NOTE: If you have CUDA installed, make sure OPENCV is set to 0.
 4. Compile it using `make`
 5. Download stable weights from here and add the downloaded `weights` directory to the `EUFS` directory
 
@@ -65,11 +67,12 @@ TODO
 ```sudo apt-get -qq remove x264 libx264-dev ffmpeg
 sudo apt-get --purge remove libav-tools
 sudo apt-get --purge autoremove
-sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
+sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
 ```
 2. Install ffmpeg:
 
-```git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
+```
+git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
 cd ffmpeg
 ./configure --enable-nonfree --enable-pic --enable-shared
 make
@@ -78,7 +81,8 @@ sudo make install
 
 3. Install OpenCV:
 
-```git clone https://github.com/opencv/opencv.git opencv
+```
+git clone https://github.com/opencv/opencv.git opencv
 cd opencv
 mkdir build
 cd build
